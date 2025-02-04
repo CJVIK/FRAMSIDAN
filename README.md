@@ -1,12 +1,7 @@
 # Framsidan
 
 - Web page for our bureau
-- Multiple pages:
-  - Baksidan (kakrecept)
-  - Framsidan (start)
-  - Högersidan (om oss)
-  - Vänstersidan (kontakt)
-  - Undersidan (portfolio/case)
+- Multiple pages
 
 ## Commit-regler
 
