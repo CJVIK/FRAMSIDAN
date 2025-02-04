@@ -2,7 +2,8 @@
 
 ## Commit-regler
 
-subject + body
+- Subject + body
+- Capital letter in beginning of subject line
 
 ## Git-flow
 
