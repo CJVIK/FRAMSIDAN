@@ -57,6 +57,7 @@ const headerContent = createHeaderContent({
     p: `RIP LINUS (eller var det så han hette Hjörtis?) FIGMA, som kom till god användning i denna uppgift ${currentDate}.`,
   },
   sectionDiscription: {
-    p1: "This is a simple website with a simple header",
+    p1: "Det är inte bara",
+    p2: "insidan som räknas.",
   },
 });
