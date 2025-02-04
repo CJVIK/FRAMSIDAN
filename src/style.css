@@ -1,0 +1,45 @@
+:root {
+  font-family: Helvetica, Inter, system-ui, Avenir, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(223, 223, 223, 1);
+  background-color: rgba(32, 32, 32, 1);
+
+  --margin-buttom-default: 1.5em;
+}
+
+body {
+  font-size: 1.6rem;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  
+  &:not(:last-child) {
+    margin-bottom: var(--margin-buttom-default);
+  }
+}
+
+a {
+  color: rgba(128, 0, 255, 1);
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    &:not(:last-child) {
+      margin-bottom: var(--margin-buttom-default);
+    }
+  }
+}
