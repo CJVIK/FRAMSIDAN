@@ -1,5 +1,13 @@
 # Framsidan
 
+- Web page for our bureau
+- Multiple pages:
+  - Baksidan (kakrecept)
+  - Framsidan (start)
+  - Högersidan (om oss)
+  - Vänstersidan (kontakt)
+  - Undersidan (portfolio/case)
+
 ## Commit-regler
 
 - Subject + body using Vim-formatted commit messages
@@ -11,19 +19,24 @@
 
 - No pushes to main or dev, branches only
 - Feature-branches syntax: f-<part-name>-<task-category> (i.e f-footer-styling); kebab-case
+- Release-branches syntax: r-<version-number> (i.e r-v0.0.1)
+  - Use same name for tag in Github
 
 ## PR-rutiner
 
+- Before issuing a PR, merge dev to feature branch and solve potential conflicts
 - Follow commit rules in the message about pull request
 - Create pull request for finished features to be merged
 - Reviewer checks code using checklist (definition of done)
+
   - If problems: leave comment/request changes in the pull request
-  - Else: approve and merge
+  - Else: approve and merge to dev
+  - Alert team of changes in dev and delete the feature-branch
 
 ## Definition of Done
 
 - [] Good variable names:
-  - camelCase
+  - camelCase (JS),
   - Purposeful names - easy to understand
 - [] Validating inputs
 - [] Semantic HTML
@@ -34,9 +47,13 @@
 
 ### Template: Definition of Done
 
-\- \[\] Good variable names: - camelCase - Purposeful names - easy to understand
+\- \[\] Good variable names:
+\- camelCase
+\- Purposeful names
+\- easy to understand
 \- \[\] Validating inputs
 \- \[\] Semantic HTML
+\- Self-sustained containers: article
+\- Dependant containers: section
+\- Other containers: div
 \- \[\]
-
-!!! Versionsnummer i merge mot main
