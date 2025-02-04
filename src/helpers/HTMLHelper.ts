@@ -1,4 +1,4 @@
-export const HTMPHelper = (() => {
+export const HTMLHelper = (() => {
     interface cardObject {
         front: HTMLElement['innerHTML'],
         back: HTMLElement['innerHTML']
