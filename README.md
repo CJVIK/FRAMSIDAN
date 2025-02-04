@@ -36,24 +36,21 @@
 ## Definition of Done
 
 - [] Good variable names:
-  - camelCase (JS),
-  - Purposeful names - easy to understand
-- [] Validating inputs
+  - camelCase (JS)
+  - Purposeful and descriptive names - easy to understand
+- [] Validating code
 - [] Semantic HTML
   - Self-sustained containers: article
   - Dependant containers: section
   - Other containers: div
-- []
 
 ### Template: Definition of Done
 
 \- \[\] Good variable names:
 \- camelCase
-\- Purposeful names
-\- easy to understand
-\- \[\] Validating inputs
+\- Purposeful and descriptive names\- easy to understand
+\- \[\] Validating code
 \- \[\] Semantic HTML
 \- Self-sustained containers: article
 \- Dependant containers: section
 \- Other containers: div
-\- \[\]
