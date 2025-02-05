@@ -1,30 +1,26 @@
-interface SectionTitleContent {
-  h1: HTMLElement["innerHTML"],
-  p?: HTMLElement["innerHTML"]
-}
-interface SectionDiscriptionContent {
-  p1: HTMLElement["innerHTML"],
-  p2?: HTMLElement["innerHTML"]
-}
-interface ArticleContent {
-  sectionTitle: SectionTitleContent,
-  sectionDiscription: SectionDiscriptionContent
-}
-
-export function createHeaderContent(content: ArticleContent): HTMLElement {
+export function createHeaderContent(content: {
+  sectionTitle: {
+    h1: HTMLHeadingElement['innerHTML'],
+    p?: HTMLParagraphElement['innerHTML']
+  },
+  sectionDiscription: {
+    p1: HTMLParagraphElement['innerHTML'],
+    p2?: HTMLParagraphElement['innerHTML']
+  }
+}): HTMLElement {
   const header = document.createElement("header");
   const article = document.createElement("article");
   article.classList.add("header-content-article");
   header.appendChild(article);
 
-  //First section
+  // First section
   const section1 = document.createElement("section");
   section1.classList.add("header-content-title");
   const h1 = document.createElement("h1");
   h1.innerHTML = content.sectionTitle.h1;
   section1.appendChild(h1);
 
-  //Add optional paragraph to first section
+  // Add optional paragraph to first section
   if (content.sectionTitle.p) {
     const p = document.createElement("p");
     p.innerHTML = content.sectionTitle.p;
@@ -32,14 +28,14 @@ export function createHeaderContent(content: ArticleContent): HTMLElement {
   }
   article.appendChild(section1);
 
-  //Second section
+  // Second section
   const section2 = document.createElement("section");
   section2.classList.add("header-content-discription");
   const p1 = document.createElement("p");
   p1.innerHTML = content.sectionDiscription.p1;
   section2.appendChild(p1);
 
-  //Add optional paragraph to second section
+  // Add optional paragraph to second section
   if (content.sectionDiscription.p2) {
     const p2 = document.createElement("p");
     p2.innerHTML = content.sectionDiscription.p2;
@@ -49,15 +45,4 @@ export function createHeaderContent(content: ArticleContent): HTMLElement {
 
   return header;
 }
-//Exempel användning
-// const currentDate = new Date().toLocaleDateString()
-// const headerContent = createHeaderContent({
-//   sectionTitle: {
-//     h1: "FRAMSIDAN",
-//     p: `RIP LINUS (eller var det så han hette Hjörtis?) FIGMA, som kom till god användning i denna uppgift ${currentDate}.`,
-//   },
-//   sectionDiscription: {
-//     p1: "Det är inte bara",
-//     p2: "insidan som räknas.",
-//   },
-// })
+
