@@ -1,3 +1,3 @@
-import { application } from './pages/parts/app';
+import { application } from "./pages/parts/app";
 
-const app = application('Framtiden');
+application("Framsidan");
