@@ -1,14 +1,14 @@
 interface SectionTitleContent {
-  h1: string;
-  p?: string;
+  h1: HTMLElement["innerHTML"],
+  p?: HTMLElement["innerHTML"]
 }
 interface SectionDiscriptionContent {
-  p1: string;
-  p2?: string;
+  p1: HTMLElement["innerHTML"],
+  p2?: HTMLElement["innerHTML"]
 }
 interface ArticleContent {
-  sectionTitle: SectionTitleContent;
-  sectionDiscription: SectionDiscriptionContent;
+  sectionTitle: SectionTitleContent,
+  sectionDiscription: SectionDiscriptionContent
 }
 
 export function createHeaderContent(content: ArticleContent): HTMLElement {
@@ -50,14 +50,14 @@ export function createHeaderContent(content: ArticleContent): HTMLElement {
   return header;
 }
 //Exempel användning
-const currentDate = new Date().toLocaleDateString();
-const headerContent = createHeaderContent({
-  sectionTitle: {
-    h1: "FRAMSIDAN",
-    p: `RIP LINUS (eller var det så han hette Hjörtis?) FIGMA, som kom till god användning i denna uppgift ${currentDate}.`,
-  },
-  sectionDiscription: {
-    p1: "Det är inte bara",
-    p2: "insidan som räknas.",
-  },
-});
+// const currentDate = new Date().toLocaleDateString()
+// const headerContent = createHeaderContent({
+//   sectionTitle: {
+//     h1: "FRAMSIDAN",
+//     p: `RIP LINUS (eller var det så han hette Hjörtis?) FIGMA, som kom till god användning i denna uppgift ${currentDate}.`,
+//   },
+//   sectionDiscription: {
+//     p1: "Det är inte bara",
+//     p2: "insidan som räknas.",
+//   },
+// })
