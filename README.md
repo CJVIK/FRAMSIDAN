@@ -1,7 +1,11 @@
 # Framsidan
 
-- Web page for our bureau
-- Multiple pages
+- Multiple pages:
+	- Baksidan (kakrecept)
+	- Framsidan (start)
+	- Högersidan (om oss)
+	- Vänstersidan (kontakt)
+	- Undersidan (portfolio/case)(Merge pull request #14 from CJVIK/dev)
 
 ## Commit-regler
 
@@ -30,13 +34,13 @@
 ## Definition of Done
 
 - [ ] Good variable names:
-  - [ ] camelCase (JS)
-  - [ ] Purposeful names - easy to understand
+    - [ ] camelCase (JS)
+    - [ ] Purposeful names - easy to understand
 - [ ] Validating code
 - [ ] Semantic HTML
-  - [ ] Self-sustained containers: article
-  - [ ] Dependant containers: section
-  - [ ] Other containers: div
+	- [ ] Self-sustained containers: article
+	- [ ] Dependant containers: section
+	- [ ] Other containers: div
 
 ### Template: Definition of Done
 
