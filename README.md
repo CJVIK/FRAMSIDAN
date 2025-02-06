@@ -5,7 +5,7 @@
 	- Framsidan (start)
 	- Högersidan (om oss)
 	- Vänstersidan (kontakt)
-	- Undersidan (portfolio/case)
+	- Undersidan (portfolio/case)(Merge pull request #14 from CJVIK/dev)
 
 ## Commit-regler
 
