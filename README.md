@@ -20,6 +20,7 @@
 - Feature-branches syntax: f-\<part name\>-\<task category\> (i.e f-footer-styling); kebab-case.
 - Release-branches syntax: r-\<version number\> (i.e r-v0.0.1).
 - Use same name for tag in Github.
+- When dev is updated and ones feature branch has no pushed commits, use rebase or cherry-pick to get latest changes from dev. Otherwise use a merge if the update is important to ones feature or wait until it's finished and just do a PR.
 
 ## PR-rutiner
 
