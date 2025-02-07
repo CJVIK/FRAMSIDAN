@@ -1,5 +1,5 @@
-import { HTMLHelper } from "../../Helpers/HTMLHelper";
-import { application } from "./app";
+import { HTMLHelper } from "../helpers/HTMLHelper";
+import * as app from "./parts/app";
 
 const case1 = {
   front: `<img src="../assets/API-omdb.png" alt="En applikation för filmer">`,
@@ -12,6 +12,6 @@ const case2 = {
 
 const cases = [case1, case2];
 
-const main = application("Cases");
+const main = app.application("Cases");
 
 main.append(HTMLHelper.createFlipCards(cases));
