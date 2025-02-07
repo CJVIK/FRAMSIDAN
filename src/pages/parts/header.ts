@@ -1,6 +1,6 @@
 import { IHeaderObject } from "../../models/IHeaderObject";
 
-export const header = (content?: IHeaderObject) => {
+export const header = (title: HTMLHeadElement['innerHTML'], content?: IHeaderObject) => {
   const header = document.createElement("header");
   const article = document.createElement("article");
   article.classList.add("header-content-article");
@@ -10,13 +10,13 @@ export const header = (content?: IHeaderObject) => {
   const section1 = document.createElement("section");
   section1.classList.add("header-content-title");
   const h1 = document.createElement("h1");
-  h1.innerHTML = content?.sectionTitle.h1 || "Default title";
+  h1.innerHTML = title;
   section1.appendChild(h1);
 
   // Add optional paragraph to first section
-  if (content?.sectionTitle.p) {
+  if (content?.sectionTitleParagraph) {
     const p = document.createElement("p");
-    p.innerHTML = content.sectionTitle.p;
+    p.innerHTML = content.sectionTitleParagraph;
     section1.appendChild(p);
   }
   article.appendChild(section1);

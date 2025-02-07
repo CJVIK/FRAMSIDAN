@@ -13,7 +13,7 @@ export const application = (title: HTMLTitleElement['innerHTML'], headerContent?
         id: 'app'
     });
   
-    document.body.prepend(header(headerContent), app, footer());
+    document.body.prepend(header(title, headerContent), app, footer());
     
     return app;
 };
