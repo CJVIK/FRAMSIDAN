@@ -6,7 +6,7 @@ export const footer = () => {
   footer.appendChild(nav);
 
   const linkCases = document.createElement("a");
-  linkCases.href = "/src/pages/cases.html";
+  linkCases.href = "/pages/cases.html";
   linkCases.innerText = "Cases";
   const linkTheTeam = document.createElement("a");
   linkTheTeam.innerHTML = "The Team";
