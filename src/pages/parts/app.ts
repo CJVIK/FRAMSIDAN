@@ -12,7 +12,7 @@ export const application = (title: HTMLTitleElement['innerHTML']) => {
         id: 'app'
     });
     
-    document.body.append(headerElement, app);
+    document.body.prepend(headerElement, app);
     footerHTML();
 
     return app;
