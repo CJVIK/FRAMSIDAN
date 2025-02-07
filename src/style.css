@@ -12,12 +12,17 @@
 }
 
 body {
-  font-size: 1.6rem;  
+  font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 800;
-  
+
   &:not(:last-child) {
     margin-bottom: var(--margin-buttom-default);
   }
@@ -26,13 +31,14 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: rgba(128, 0, 255, 1);
   text-decoration: none;
-  
+
   &:hover {
     text-decoration: underline;
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -58,26 +64,24 @@ ul, ol {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://images.unsplash.com/photo-1542613741-0bc8abb1fd74?q=80&w=2898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url("https://images.unsplash.com/photo-1542613741-0bc8abb1fd74?q=80&w=2898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: bottom;
-
 }
 
- /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
- .flip-card {
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
+  width: 500px;
+  height: 400px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 30vw;
+  height: 300px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -89,17 +93,22 @@ ul, ol {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
-  width: 100%;
+  width: 30vw;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+
+  img {
+    width: 100%;
+  }
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
 
@@ -108,4 +117,7 @@ ul, ol {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+  font-size: larger;
+  text-align: center;
+  justify-content: center;
 }
