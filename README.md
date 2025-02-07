@@ -1,7 +1,11 @@
 # Framsidan
 
-- Web page for our bureau
-- Multiple pages
+- Multiple pages:
+	- Baksidan (kakrecept)
+	- Framsidan (start)
+	- Högersidan (om oss)
+	- Vänstersidan (kontakt)
+	- Undersidan (portfolio/case)(Merge pull request #14 from CJVIK/dev)
 
 ## Commit-regler
 
@@ -16,6 +20,7 @@
 - Feature-branches syntax: f-\<part name\>-\<task category\> (i.e f-footer-styling); kebab-case.
 - Release-branches syntax: r-\<version number\> (i.e r-v0.0.1).
 - Use same name for tag in Github.
+- When dev is updated and ones feature branch has no pushed commits, use rebase or cherry-pick to get latest changes from dev. Otherwise use a merge if the update is important to ones feature or wait until it's finished and just do a PR.
 
 ## PR-rutiner
 
@@ -30,13 +35,13 @@
 ## Definition of Done
 
 - [ ] Good variable names:
-  - [ ] camelCase (JS)
-  - [ ] Purposeful names - easy to understand
+    - [ ] camelCase (JS)
+    - [ ] Purposeful names - easy to understand
 - [ ] Validating code
 - [ ] Semantic HTML
-  - [ ] Self-sustained containers: article
-  - [ ] Dependant containers: section
-  - [ ] Other containers: div
+	- [ ] Self-sustained containers: article
+	- [ ] Dependant containers: section
+	- [ ] Other containers: div
 
 ### Template: Definition of Done
 
