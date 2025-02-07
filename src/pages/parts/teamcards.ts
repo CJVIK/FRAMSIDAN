@@ -1,4 +1,4 @@
-import { HTMLHelper } from '../Helpers/HTMLHelper';
+import { HTMLHelper } from './../../helpers/HTMLHelper.ts';
 
 export const cjCard: { front: string; back: string } = {
     front: '<img src="" alt="CJ avatar image"> <h3>CJ</h3>',
