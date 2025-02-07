@@ -4,6 +4,7 @@ import { headerMainContent } from "./header";
 import { footerHTML } from '../../HTML/footer';
 
 export const application = (title: HTMLTitleElement['innerHTML']) => {
+
     const app = document.createElement('main'), headerElement = createHeaderContent(headerMainContent);
 
     head(title);
@@ -11,7 +12,7 @@ export const application = (title: HTMLTitleElement['innerHTML']) => {
     Object.assign(app, {
         id: 'app'
     });
-
+  
     document.body.prepend(headerElement, app);
     footerHTML();
 
