@@ -1,17 +1,19 @@
 import { head } from "./head";
-import { createHeaderContent } from "../../helpers/HTMLHeader";
-import { headerMainContent } from "./header";
+import { header } from "./header";
+import { footer } from "./footer";
+import { IHeaderObject } from "../../models/IHeaderObject";
 
-export const application = (title: HTMLTitleElement['innerHTML']) => {
+export const application = (title: HTMLTitleElement['innerHTML'], headerContent?: IHeaderObject) => {
+
     const app = document.createElement('main');
+
+    head(title);
 
     Object.assign(app, {
         id: 'app'
     });
-
-    head(title);
-    const headerElement = createHeaderContent(headerMainContent);
-    document.body.appendChild(headerElement);
   
+    document.body.prepend(header(title, headerContent), app, footer());
+    
     return app;
 };
