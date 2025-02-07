@@ -1,11 +1,11 @@
 import { head } from "./head";
-import { createHeaderContent } from "../../helpers/HTMLHeader";
-import { headerMainContent } from "./header";
+import { header } from "./header";
 import { footer } from "./footer";
+import { IHeaderObject } from "../../models/IHeaderObject";
 
-export const application = (title: HTMLTitleElement['innerHTML']) => {
+export const application = (title: HTMLTitleElement['innerHTML'], headerContent?: IHeaderObject) => {
 
-    const app = document.createElement('main'), headerElement = createHeaderContent(headerMainContent);
+    const app = document.createElement('main');
 
     head(title);
 
@@ -13,7 +13,7 @@ export const application = (title: HTMLTitleElement['innerHTML']) => {
         id: 'app'
     });
   
-    document.body.prepend(headerElement, app, footer());
+    document.body.prepend(header(headerContent), app, footer());
     
     return app;
 };
