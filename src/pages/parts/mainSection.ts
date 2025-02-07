@@ -6,15 +6,11 @@ const case1 = {
   back: "<p>En applikation för filmer</p>",
 };
 const case2 = {
-  front: `<img src="../assets/konst-i-konsten.png" alt="En applikation för 'konst i konsten'">`,
-  back: "<p>En applikation för 'konst i konsten'</p>",
-};
-const case3 = {
   front: `<img src="../assets/the-todos.png" alt="En applikation för to-do-listor">`,
   back: "<p>En applikation för to-do-listor</p>",
 };
 
-const cases = [case1, case2, case3];
+const cases = [case1, case2];
 
 const main = application("Cases");
 
