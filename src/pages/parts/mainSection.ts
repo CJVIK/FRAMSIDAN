@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { HTMLHelper } from "../../Helpers/HTMLHelper";
 import { application } from "./app";
 
@@ -19,3 +20,20 @@ const cases = [case1, case2, case3];
 const main = application("Cases");
 
 main.append(HTMLHelper.createFlipCards(cases));
+=======
+const mainSection = document.getElementById("main");
+if (mainSection) {
+  const slideShow = document.createElement("section");
+  const slideCardContainer = document.createElement("div");
+  const slideCard = document.createElement("img");
+
+  slideShow.className = "slideshow-container";
+  slideCardContainer.className = "slidecard-container";
+  slideCard.className = "slidecard-image";
+  slideCard.src = "../assets/puss.jpg";
+
+  slideCardContainer.appendChild(slideCard);
+  slideShow.appendChild(slideCardContainer);
+  mainSection.appendChild(slideShow);
+}
+>>>>>>> 2935a373d9a63244888aebd7556f97cc36d49fc4
