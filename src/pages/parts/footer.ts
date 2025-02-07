@@ -1,23 +1,31 @@
 export const footer = () => {
-  const nav = document.createElement("nav");
+  const footer = document.createElement("footer"), nav = document.createElement("nav"), linkHome = document.createElement("a"),
+    linkCases = document.createElement("a"), linkTheTeam = document.createElement("a"), linkContact = document.createElement("a");
+
   nav.id = "nav";
-  const footer = document.createElement("footer");
+  
+  Object.assign(linkHome, {
+    href: "/",
+    innerText: "Home"
+  });
 
-  footer.appendChild(nav);
+  Object.assign(linkCases, {
+    href: "/pages/cases.html",
+    innerText: "Cases"
+  });
 
-  const linkHome = document.createElement("a");
-  linkHome.href = "/";
-  linkHome.innerText = "Home";
-  const linkCases = document.createElement("a");
-  linkCases.href = "/pages/cases.html";
-  linkCases.innerText = "Cases";
-  const linkTheTeam = document.createElement("a");
-  linkTheTeam.href = "/pages/team.html";
-  linkTheTeam.innerHTML = "The Team";
-  const linkContact = document.createElement("a");
-  linkContact.innerHTML = "Contact";
+  Object.assign(linkTheTeam, {
+    href: "/pages/team.html",
+    innerText: "The Team"
+  });
 
+  Object.assign(linkContact, {
+    // href: "/pages/contact.html",
+    innerText: "Contact"
+  });
+  
   nav.append(linkHome, linkCases, linkTheTeam, linkContact);
+  footer.appendChild(nav);
 
   return footer;
 };
