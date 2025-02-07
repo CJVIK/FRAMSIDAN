@@ -3,25 +3,14 @@
 export const footerHTML = () => {
     const nav = document.createElement("nav");
     nav.id = "nav";
-    const footer = document.getElementById("footer");
+    const footer = document.createElement("footer");
 
-    if (footer) {
-        footer.appendChild(nav);
-    } else {
-        console.error("Footer element not found.");
-    }
+    footer.appendChild(nav);
 
-    const headingCases = document.createElement("h1");
+    const headingCases = document.createElement("a");
     headingCases.innerHTML = "Cases";
-    const headingTheTeam = document.createElement("h1");
+    const headingTheTeam = document.createElement("a");
     headingTheTeam.innerHTML = "The Team";
-    const headingContact = document.createElement("h1");
+    const headingContact = document.createElement("a");
     headingContact.innerHTML = "Contact";
-
-    if(nav) {
-        nav.append(headingCases, headingContact, headingTheTeam);
-    }
-    else {
-        console.error("Nav element not found.");
-    }
-}
+} 
