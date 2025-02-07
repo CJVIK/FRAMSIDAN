@@ -1,3 +1,5 @@
+
+import { head } from "./parts/head";
 import { application } from "./parts/app";
 
 const main = application("Start page");
