@@ -1,6 +1,6 @@
 
 
-export const footerHTML = () => {
+export const footer = () => {
     const nav = document.createElement("nav");
     nav.id = "nav";
     const footer = document.createElement("footer");
@@ -13,4 +13,8 @@ export const footerHTML = () => {
     headingTheTeam.innerHTML = "The Team";
     const headingContact = document.createElement("a");
     headingContact.innerHTML = "Contact";
+
+    nav.append(headingCases, headingTheTeam, headingContact)
+
+    return footer;
 } 

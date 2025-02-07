@@ -1,7 +1,7 @@
 import { head } from "./head";
 import { createHeaderContent } from "../../helpers/HTMLHeader";
 import { headerMainContent } from "./header";
-import { footerHTML } from '../../HTML/footer';
+import { footer } from "./footer";
 
 export const application = (title: HTMLTitleElement['innerHTML']) => {
 
@@ -13,8 +13,7 @@ export const application = (title: HTMLTitleElement['innerHTML']) => {
         id: 'app'
     });
   
-    document.body.prepend(headerElement, app);
-    footerHTML();
-
+    document.body.prepend(headerElement, app, footer());
+    
     return app;
 };
