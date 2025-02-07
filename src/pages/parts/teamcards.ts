@@ -25,7 +25,7 @@ export const teamCards = () => {
     },
     {
         front: '<img src="" alt="ANNA avatar image"> <h3>CJ</h3>',
-        back: '<p>Hi, I am ANNA. Contact down below</p><a href="https://www.linkedin.com/in/anna-ekström-1b1b3b1a4/">LinkedIn</a><a href="">Steam?</a>'
+        back: '<p>Hi, I am ANNA. Contact down below</p><a href="">LinkedIn</a><a href="">Steam?</a>'
     }]
     return HTMLHelper.createFlipCards(teamCardData);
 };
