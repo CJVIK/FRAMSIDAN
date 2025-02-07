@@ -1,4 +1,4 @@
-import { HTMLHelper } from "../../helpers/HTMLHelper";
+import { HTMLHelper } from "../../Helpers/HTMLHelper";
 import { application } from "./app";
 
 const case1 = {
